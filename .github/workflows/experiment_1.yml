@@ -1,5 +1,10 @@
 name: 'Experiment #1'
-on: workflow-dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "123"
+        default: "123"
 
 jobs:
   steps:
