@@ -7,13 +7,16 @@ on:
         default: "123"
 
 jobs:
-  steps:
-  - name: Checkout repository
-    uses: actions/checkout@v3
-  - name: Read %file%
-    id: package
-    uses: juliangruber/read-file-action@v1
-    with:
-      path: ./README.md
-  - name: Echo %file%
-    run: echo "${{ steps.package.outputs.content }}"
+    experiment_1:
+        runs-on: ubuntu-latest
+        
+        steps:
+        - name: Checkout repository
+          uses: actions/checkout@v3
+        - name: Read %file%
+          id: package
+          uses: juliangruber/read-file-action@v1
+          with:
+            path: ./README.md
+        - name: Echo %file%
+          run: echo "${{ steps.package.outputs.content }}"
