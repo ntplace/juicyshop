@@ -1,0 +1,26 @@
+#____________________________________________
+# GitHub Action Part-1 - work1991
+#
+# Copyleft (c) Nazar Hets 2023.
+#____________________________________________
+name: My-GitHubActions-work1991
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  my_testing:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Print Hello Message
+      run: echo "Hello World from Testing job"
+    
+  my_deploy:
+      runs-on: ubuntu-latest
+      steps:
+      - name: Print Hello Message
+        run: echo "Hello World from Deploy job"
+    
