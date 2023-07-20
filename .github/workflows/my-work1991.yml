@@ -8,7 +8,7 @@ name: My-GitHubActions-work1991
 on:
   push:
     branches:
-    - master
+    - main
 
 jobs:
   my_testing:
