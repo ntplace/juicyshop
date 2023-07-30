@@ -6,7 +6,8 @@
 name: My-GitHubActions-work1991
 
 on:
-  inputs:
+  workflow_dispatch:
+    inputs:
       name:
         description: "123"
         default: "123"
