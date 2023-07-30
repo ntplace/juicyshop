@@ -6,7 +6,7 @@
 name: My-GitHubActions-work1991
 
 on:
- inputs:
+  inputs:
       name:
         description: "123"
         default: "123"
