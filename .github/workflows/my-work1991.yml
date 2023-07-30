@@ -8,13 +8,14 @@ name: My-GitHubActions-work1991
 on:
   workflow_dispatch:
     inputs:
-      name:
+      customfield: 
         description: "123"
         default: "123"
 
   push:
     branches:
     - main
+    - master
 
 jobs:
   my_testing:
@@ -22,7 +23,7 @@ jobs:
     
     steps:
     - name: Print Hello Message
-      run: echo "Hello World from Testing job"
+      run: echo "$INPUT_CUSTOMFIELD"
     
   my_deploy:
       runs-on: ubuntu-latest
