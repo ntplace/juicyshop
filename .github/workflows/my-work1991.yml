@@ -27,7 +27,8 @@ jobs:
     
     steps:
     - name: Print Hello Message
-      run: echo "${{ github.event.inputs.customfield }}"
+      run: echo "${{ github.event.inputs.customfield }}${{ github.event.inputs.customfield1}}" 
+     
     
   my_deploy:
       runs-on: ubuntu-latest
