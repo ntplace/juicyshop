@@ -12,6 +12,10 @@ on:
         description: "123"
         default: "123"
 
+      customfield1: 
+        description: "321"
+        default: "321"
+
   push:
     branches:
     - main
