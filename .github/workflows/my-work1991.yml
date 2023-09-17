@@ -27,7 +27,7 @@ jobs:
     
     steps:
     - name: Print Hello Message
-      run: echo "${{ github.event.inputs.customfield }}${{ github.event.inputs.customfield1}}" 
+      run: echo "${{ github.event.inputs.customfield }}${{ github.event.inputs.customfield1}}" | rev |tr '[a-z]' '[A-Z]'
      
     
   my_deploy:
