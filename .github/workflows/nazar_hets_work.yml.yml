@@ -27,7 +27,7 @@ jobs:
               node-version: '18.16.1'
           - run: ls -al
           - run: npm --version
-          - run: npm i typescript ts-node 
+          - run: npm i typescript@4.6.4 ts-node 
           - run: npm ls typescript
           - run: npm ls ts-node
           - run: npm install --omit=dev --unsafe-perm
