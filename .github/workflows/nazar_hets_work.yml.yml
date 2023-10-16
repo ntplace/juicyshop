@@ -27,6 +27,7 @@ jobs:
               node-version: '18.16.1'
           - run: ls -al
           - run: npm --version
+          - run: npm i typescript ts-node 
           - run: npm install 
           
 
