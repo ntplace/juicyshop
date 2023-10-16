@@ -28,7 +28,9 @@ jobs:
           - run: ls -al
           - run: npm --version
           - run: npm i typescript ts-node 
-          - run: npm install 
+          - run: npm install --omit=dev --unsafe-perm
+          - run: npm dedupe
+          
           
 
       
