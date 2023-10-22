@@ -34,6 +34,7 @@ jobs:
           - run: npm dedup
           - run: npm ls typescript
           - run: npm ls ts-node
+          - run: npm start
           
           
 
